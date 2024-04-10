@@ -1,0 +1,431 @@
+@import "var.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Krona One, "Arial";
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: white;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(18, 18, 18);
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(52, 0, 69);
+  border-radius: 1em;
+  margin-block: 1px;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.w-100 {
+  width: 100vw;
+}
+
+.bg-data {
+  background-image: var(--bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tfp_logo {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.tfp_logo span {
+  font-size: 1.2em;
+}
+
+.tfp_logo img {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  translate: 0% 50%;
+  width: 100px;
+}
+
+.tfp_navbar {
+  display: flex;
+  gap: 30px;
+  height: fit-content;
+  font-size: 1.6em;
+  padding: 20px;
+}
+
+.tfp_navbar>div {
+  position: relative;
+}
+
+.tfp_navbar>div a {
+  text-decoration: none;
+  color: white;
+}
+
+.tfp_navbar>div:hover {
+  font-weight: 600;
+}
+
+.tfp_navbar>div::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(-30deg, #7300ff, purple);
+  transition: transform 500ms ease;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.tfp_navbar>div:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.section1 {
+  position: relative;
+  height: 700vh;
+  background-color: black;
+}
+
+.section1 .vfx {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section1 .separators {
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  height: 80vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  translate: -50% 0%;
+  z-index: 999;
+}
+
+.section1 .separators .line {
+  height: 100%;
+  width: 3px;
+  background-image: linear-gradient(transparent, white);
+}
+
+.rotation_effect {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.rotation_effect>div {
+  position: absolute;
+  height: 180vh;
+  width: 150px;
+  left: 50%;
+  bottom: 0;
+  translate: -50% 66%;
+  transform-origin: bottom;
+  rotate: -30deg;
+  /* background-color: red; */
+  transition: rotate 75ms linear;
+}
+
+.rotation_effect img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 175px;
+  transition: opacity 400ms linear;
+}
+
+.section1 .content {
+  position: absolute;
+  top: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100vh);
+  gap: 5px;
+  row-gap: 100vh;
+  justify-content: center;
+  z-index: 9999999;
+}
+
+.section1 .content>div {
+  padding: 100px;
+  font-size: 1.4em;
+}
+
+.background {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url("../img/stars.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: 9;
+}
+
+.background img {
+  position: absolute;
+  bottom: 0;
+  translate: 0% 40%;
+  width: 100%;
+}
+
+.section2 {
+  position: relative;
+  height: 125vh !important;
+}
+
+.section2 span {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  translate: 0% -50%;
+  width: 40%;
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #00000033;
+  box-shadow: 0px 0px 15px 15px #00000033;
+}
+
+.section2::before,
+.section2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  box-shadow: 0px 0px 20px 15px black;
+  z-index: 999999;
+}
+
+.section2::after {
+  top: 0;
+  translate: 0 -50%;
+}
+
+.section2::before {
+  bottom: 0;
+  translate: 0 -50%;
+}
+
+.section3 {
+  height: 200vh;
+}
+
+.team {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.team h2 {
+  font-size: 4em;
+}
+
+.team .member {
+  position: absolute;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.3em;
+  text-shadow: 0px 0px 2px black;
+}
+
+.team .member img {
+  width: 15vw;
+}
+
+.team .member:nth-of-type(1) {
+  top: 30%;
+  left: 10%;
+}
+
+.team .member:nth-of-type(2) {
+  bottom: 20%;
+  left: 45%;
+}
+
+.team .member:nth-of-type(3) {
+  top: 30%;
+  right: 10%;
+}
+
+.trailer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.trailer>div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trailer iframe {
+  width: 60vw;
+  aspect-ratio: 16/9;
+}
+
+footer {
+  padding: 35px;
+  background-color: #000000;
+  font-size: 0.8em;
+}
+
+footer .top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+footer .top .part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer .top .part .title {
+  opacity: 0.5;
+  font-size: 0.9em;
+}
+
+footer .top .part a {
+  color: white;
+  text-decoration: none;
+  height: fit-content;
+}
+
+footer .top .part.who {
+  font-size: 0.7em;
+  width: 76%;
+  font-weight: bold;
+  color: grey;
+}
+
+footer .top .part.who a {
+  color: grey;
+}
+
+.fancy_link {
+  position: relative;
+}
+
+.fancy_link::after {
+  content: "";
+  position: absolute;
+  top: 95%;
+  left: 0%;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  transition: transform 500ms ease;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.fancy_link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.section4 {
+  height: 90vh;
+}
+
+.section4 .selection {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 40px;
+  font-size: 2em;
+}
+
+.section4 .selection select {
+  font-size: 1em;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+}
+
+.section4 .selection select option {
+  background-color: black;
+}
+
+.section4 .constellation {
+  position: relative;
+}
+
+.section4 .constellation .install {
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  translate: -50% -50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+
+  background-color: #00000084;
+  box-shadow: 0px 0px 10px 10px #00000084;
+}
+
+.section4 .constellation .install img {
+  width: 40px;
+}

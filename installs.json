@@ -1,0 +1,51 @@
+{
+  "windows": [
+    {
+      "name": "TFP_0.7",
+      "version": "v0.7",
+      "size": 200
+    },
+    {
+      "name": "TFP_0.7.8",
+      "version": "v0.7.8",
+      "size": 250
+    },
+    {
+      "name": "TFP_0.9",
+      "version": "v0.9",
+      "size": 200
+    },
+    {
+      "name": "TFP_0.9.2",
+      "version": "v0.9.2",
+      "size": 250
+    },
+    {
+      "name": "TFP_1.0",
+      "version": "v1.0",
+      "size": 280
+    },
+    {
+      "name": "TFP_1.1",
+      "version": "v1.1",
+      "size": 250
+    }
+  ],
+  "linux": [
+    {
+      "name": "TFP_1.0",
+      "version": "v1.0",
+      "size": 200
+    },
+    {
+      "name": "TFP_1.1",
+      "version": "v1.1",
+      "size": 200
+    },
+    {
+      "name": "TFP_1.2",
+      "version": "v1.2",
+      "size": 250
+    }
+  ]
+}

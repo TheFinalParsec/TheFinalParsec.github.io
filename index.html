@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <script src="scripts/node_builder.js" defer></script>
+  <script src="scripts/p5.min.js" defer></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/constellation.js" defer></script>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <title>The Final Parsec</title>
+</head>
+
+<body>
+  <div id="home" class="h-100 bg-data" style="--bg: url('../img/the_final_parsec_banner_ex.png')">
+    <navbar>
+      <div class="tfp_logo">
+        <span>
+          The Final<br>
+          Parsec
+        </span>
+        <img src="img/star.svg" alt="star">
+      </div>
+      <div class="tfp_navbar">
+        <div><a href="#home">Start</a></div>
+        <div><a href="#about">Historia</a></div>
+        <div><a href="#team">Zespół</a></div>
+        <div><a href="./TheFinalParsec-Windows.zip" target="_blank" style="color: #23abff;">Pobierz</a></div>
+      </div>
+    </navbar>
+  </div>
+  <div class="section1" id="about">
+    <div class="vfx">
+      <div class="rotation_effect">
+        <div>
+          <img id="img_1" src="img/sputnik1.png" alt="" style="opacity: 1;">
+          <img id="img_2" src="img/vostok1.png" alt="" style="opacity: 0;">
+          <img id="img_3" src="img/apollo11.png" alt="" style="opacity: 0;">
+        </div>
+      </div>
+      <div class="separators">
+        <div></div>
+        <div class="line"></div>
+        <div></div>
+        <div class="line"></div>
+        <div></div>
+      </div>
+      <div class="background">
+        <img id="earth_img" src="img/earth.png" alt="ziemia">
+      </div>
+    </div>
+    <div class="content">
+      <!-- -->
+      <div></div>
+      <div>
+        <h2>1900 rok</h2>
+        <span>
+          Opowieść Konstantego Ciołkowiskiego,
+          ojca kosmonautyki i wynalazcy
+          rakiety wielkoetapowej
+        </span>
+      </div>
+      <div></div>
+      <!--  -->
+      <div></div>
+      <div></div>
+      <div>
+        <h2>1961 rok</h2>
+        <span>
+          Początek zimnej wojny, wyścig kosmiczny.
+          Historia legendarnego Juriego Gagarina.
+        </span>
+      </div>
+      <!--  -->
+      <div>
+        <h2>1969 rok</h2>
+        <span>
+          Neil Armstrong, Buzz Aldrin, Michael Collins, Margaret Hamilton,
+          oraz inne ikony misji Apollo 11. Pierwszy człowiek na Księżycu.
+        </span>
+      </div>
+      <div></div>
+      <div></div>
+      <!--  -->
+    </div>
+  </div>
+  <div class="section2 bg-data" style="--bg: url('../img/moon_flag_bg.png')">
+    <span>
+      Gra została
+      stworzona
+      na konkurs
+      GEEK 2024
+    </span>
+  </div>
+  <div class="section3 bg-data" style="--bg: url('../img/nebula.jpg')" id="team">
+    <div class="team">
+      <h2>Nasza drużyna</h2>
+      <div class="member">
+        <span>
+          Sebastian Drabik
+        </span>
+        <img src="img/astronaut1.png" alt="">
+      </div>
+      <div class="member">
+        <img src="img/astronaut2.png" alt="">
+        <span>
+          Kacper Bronka
+        </span>
+      </div>
+      <div class="member">
+        <span>
+          Kacper Hanus
+        </span>
+        <img src="img/astronaut3.png" alt="">
+      </div>
+    </div>
+    <div class="trailer">
+      <div>
+        <div>Zobacz zwiastun:</div>
+        <iframe src="https://www.youtube.com/embed/5hIquj6N0hg?si=gbjCcx03aoKFlGD7" title="The Final Parsec"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="section4 bg-data" style="--bg: url('../img/stars.png'); display:none !important;" id="download">
+    <!-- none until we get some downloadable version -->
+    <div class="selection">
+      <span>Konstelacja gwiezdna</span>
+      <select id="os">
+        <option value="windows">Windows</option>
+        <option value="linux">Linux</option>
+      </select>
+    </div>
+    <div class="constellation">
+
+    </div>
+  </div>
+  </div>
+  <footer>
+    <div class="top">
+      <div class="part">
+        <span class="title">Kontakt</span>
+        <span class="content">kacperbronka7@gmail.com</span>
+        <span class="content">virozgames@gmail.com</span>
+        <span class="content">kahanus2006@gmail.com</span>
+      </div>
+      <div class="part">
+        <span class="title">Nasze strony</span>
+        <a href="https://kacperbronka.github.io/" class="content fancy_link">Kacper Bronka</a>
+        <a href="https://zoriv.github.io/" class="content fancy_link">Sebastian Drabik</a>
+        <a href="https://legokapiman.github.io/" class="content fancy_link">Kacper Hanus</a>
+      </div>
+      <div class="part who">
+        <span class="content">Ten projekt został stworzony przez trzech uczniów, uczących się w "<a
+            href="https://elektryk.krosno.pl/" class="fancy_link">Elektryku</a>"</span>
+      </div>
+    </div>
+    <div class="bottom">The Final Parsec &copy;2023-<span id="copy"></span>, TCG Studio</div>
+  </footer>
+</body>
+
+</html>
