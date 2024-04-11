@@ -19,6 +19,48 @@ body {
   background-color: black;
 }
 
+.notAvailable {
+  font-size: 1.8vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 20vh;
+  height: 20vh;
+  padding: 1vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.notAvailable img {
+  height: 5vh;
+  position: absolute;
+  bottom: 4.5vh;
+  left: 34%;
+}
+
+.notAvailable span {
+  right: 1vh;
+  bottom: 1vh;
+  position: absolute;
+}
+
+#bodyNotAvailable {
+  background-image: url(../img/nebula.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+#bodyNotAvailable main {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -26,7 +68,6 @@ body {
 
 ::-webkit-scrollbar-track {
   background-color: rgb(18, 18, 18);
-
 }
 
 ::-webkit-scrollbar-thumb {

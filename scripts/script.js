@@ -1,3 +1,12 @@
+if (window.screen.width < 1500) {
+  document.body.innerHTML = `<div class="notAvailable">
+    Przepraszamy, strona nie jest dostępna na telefon.
+    <img src="img/logo.png" alt="logo">
+    <span>&copy;TCG</span>
+  </div>`;
+  document.body.setAttribute("id", "bodyNotAvailable");
+}
+
 function mapVal(value, a, b, c, d) {
   value = (value - a) / (b - a);
   return c + value * (d - c);
